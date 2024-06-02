@@ -1,0 +1,25 @@
+{
+    "name": "Block de Notas",
+    "short_name": "Block de notas",
+    "description": "Te damos la bienvenida a tu block de notas de confianza, desarrollado por Andrea Muchacho. Podras agregar notas, editarlas y eliminarlas como gustes!",
+    "background_color": "#2B2B2B",
+    "theme_color":"#A9E0DD",
+    "orientation": "portrait",
+    "display": "standalone",
+    "start_url": "./?utm_source=web_app_manifest",
+    "scope":"./",
+    "lang": "es-MX",
+    "icons": [
+        
+           {
+            "src":"./img/star4.png",
+            "sizes": "144x144",
+            "type": "image/png"
+           },
+        {
+            "src":"./img/star3.png",
+            "sizes": "64x64",
+            "type": "image/png"
+        }
+    ]
+}

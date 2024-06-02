@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Block de Notas</title>
+    <meta
+      name="description"
+      content="Te damos la bienvenida a tu block de notas de confianza, desarrollado por Andrea Muchacho. Podras agregar notas, editarlas y eliminarlas como gustes!"
+    />
+    <meta name="theme-color" content="#A9E0DD" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <link rel="shortcut icon" type="image/png" href="./img/star.png" />
+    <link rel="apple-touch-icon" href="./img/star.png" />
+    <link rel="apple-touch-startup-image" href="./img/star.png" />
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>Block de Notas</h1>
+    <form id="task-form">
+      <label for="title">Title:</label>
+      <input
+        type="text"
+        id="task-title"
+        placeholder="task-title"
+        name="title"
+      />
+      <label for=""></label>
+      <textarea
+        name="description"
+        id="task-description"
+        rows="3"
+        placeholder="task-description"
+      ></textarea>
+      <button id="btn-task-save">Guardar</button>
+    </form>
+    <div id="tasks-container"></div>
+    <mi-footer></mi-footer>
+  </body>
+
+  <script type="module" src="./index.js"></script>
+  <script src="./script.js"></script>
+</html>

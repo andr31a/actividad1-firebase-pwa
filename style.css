@@ -1,0 +1,148 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #CBF3F0;
+    color: #32302E;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #FF9F1C;
+}
+
+form {
+    background-color: #FFFFFF;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #CBF3F0;
+    border-radius: 4px;
+    width: calc(100% - 20px); /* Ajuste de ancho para incluir padding */
+}
+
+form input {
+    width: calc(100% - 20px);
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #FFBF69;
+}
+
+#tasks-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Espacio entre los elementos */
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 0 20px;
+    flex: 1;
+}
+
+#tasks-container > div {
+    background-color: #FFFFFF;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(50% - 20px); /* Dos elementos por fila */
+    box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+    #tasks-container > div {
+        flex: 1 1 100%; /* Un solo elemento por fila en pantallas pequeñas */
+    }
+}
+
+#tasks-container h3 {
+    margin: 0 0 10px;
+    color: #FF9F1C;
+}
+
+#tasks-container p {
+    margin: 0 0 10px;
+    color: #32302E;
+}
+
+#tasks-container button {
+    padding: 8px 12px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-delete {
+    background-color: #FF9F1C;
+    color: white;
+}
+
+.btn-delete:hover {
+    background-color: #FFBF69;
+}
+
+.btn-edit {
+    background-color: #CBF3F0;
+    color: #32302E;
+}
+
+.btn-edit:hover {
+    background-color: #A9E0DD;
+}
+
+footer {
+    background-color: #32302E;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+}
+
+footer .logo img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+footer .footer-content span {
+    display: block;
+    margin: 5px 0;
+}
+
+footer .footer-content strong {
+    color: #FFBF69;
+}
+
+footer .footer-content u {
+    color: #FF9F1C;
+}
